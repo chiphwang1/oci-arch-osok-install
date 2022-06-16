@@ -36,9 +36,7 @@ variable "release" {
 
 # variables for dynamic group
 # variable for ocid of compartment that holds OKE cluster
-variable "node_compartment_ocid" {
-    type = string
-    default = ""
+
 }
 variable "dynamic_group_name" {
     type = string
@@ -66,13 +64,14 @@ variable "policy_name" {
 
 
 variable "tenancy_ocid_osok" {
-  default =  ""
   type = string
 }
 
 
 
-
+variable "node_compartment_ocid" {
+  type = string
+}
 
 
 

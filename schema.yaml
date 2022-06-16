@@ -1,6 +1,6 @@
-title: "Build a CI/CD pipelines by using OCI DevOps services."
-stackDescription: "Build a continuous integration and deployment pipeline by using Oracle Cloud Infrastructure DevOps services." 
-description: "Build a continuous integration and deployment pipeline by using Oracle Cloud Infrastructure DevOps services."
+title: "Install OSOK Operator in an OKE Cluster"
+stackDescription: "Install OSOK Operator in an OKE Cluster" 
+description: "Install OSOK Operator in an OKE Cluster"
 schemaVersion: 1.1.0
 version: "20190404"
 locale: "en"
@@ -23,6 +23,16 @@ variableGroups:
 
 
 
+- title: Dynamic Group Configuration
+  visible: true 
+  variables:
+    - dynamic_group_name
+    - dynamic_group_description
+    - policy_name
+    - policy_description
+    - tenancy_ocid_osok
+    - node_compartment_ocid
+    
 
 
 
