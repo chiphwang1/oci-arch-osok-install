@@ -26,7 +26,42 @@ variable "release" {
 }
 
 
-variable "tenancy_ocid_osok" {
-  default =  ""
+
+# variables for dynamic group
+# variable for ocid of compartment that holds OKE cluster
+
+
+variable "dynamic_group_name" {
+    type = string
+    default = "mesh_osok"
 }
+variable "dynamic_group_description" {
+    type = string
+    default = "osok dynamic group"
+}
+
+
+# variables for Polciy for Dynamic Group to allow OSOK Operations
+# variable for ocid of compartment that holds OKE cluster
+
+variable "policy_description" {
+    type = string
+    default = "policy to allow OSOK operation"
+}
+
+variable "policy_name" {
+    type = string
+    default = "osok_policy"
+}
+
+variable "tenancy_ocid_osok" {
+  type = string
+  default = ""
+}
+
+variable "node_compartment_ocid" {
+  type = string
+  default = ""
+}
+
 

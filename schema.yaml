@@ -21,17 +21,6 @@ variableGroups:
   - private_key_path
   - network_cidrs
 
-- title: Policy Variables
-  visible: true 
-  variables:
-    - dynamic_group_name
-    - dynamic_group_description
-    - policy_name
-    - tenancy_ocid_osok
-    - node_compartment_ocid
-
-
-
 
 - title: OKE Worker Nodes Configuration
   visible: true 
