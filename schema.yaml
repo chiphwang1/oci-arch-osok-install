@@ -23,15 +23,7 @@ variableGroups:
 
 
 
-- title: Dynamic Group Configuration
-  visible: true 
-  variables:
-    - dynamic_group_name
-    - dynamic_group_description
-    - policy_name
-    - policy_description
-    - tenancy_ocid_osok
-    - node_compartment_ocid
+
     
 
 
