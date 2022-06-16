@@ -10,11 +10,10 @@ terraform {
 resource "null_resource" "install_osok" {
 
  provisioner "local-exec" {
-    depends_on = [local_file.kubeconfig]
     command = "/bin/bash ./script/install_osok.sh" 
 
-   
   }
+
 
 
 provisioner "local-exec" {
@@ -22,7 +21,7 @@ provisioner "local-exec" {
     command = "/bin/bash ./script/cleanup_osok.sh" 
   }
 
-depends_on = [kubernetes_secret_v1.ocicredentials]
+depends_on = [local_file.kubeconfig]
 
 }
 
