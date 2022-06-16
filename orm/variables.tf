@@ -28,3 +28,6 @@ variable "release" {
 
 
 
+variable "tenancy_ocid_for_dynamic_group" {
+  default =  ""
+}
