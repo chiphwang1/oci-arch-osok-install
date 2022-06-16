@@ -28,6 +28,11 @@ variable "release" {
 
 
 
-variable "tenancy_ocid_for_dynamic_group" {
+variable "tenancy_ocid_osok" {
   default =  ""
 }
+
+
+
+variable "node_compartment_ocid" {
+  default =  ""

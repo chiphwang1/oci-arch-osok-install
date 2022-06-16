@@ -6,7 +6,7 @@
 
 resource "oci_identity_dynamic_group" "osok_dynamic_group" {
     #Required
-    compartment_id = var.node_compartment_ocid
+    compartment_id = var.tenancy_ocid_osok
     description = var.dynamic_group_description
     matching_rule = format("instance.compartment.id='%s'", var.node_compartment_ocid)
     name = var.dynamic_group_name
@@ -20,7 +20,7 @@ resource "oci_identity_dynamic_group" "osok_dynamic_group" {
 
 resource "oci_identity_policy" "osok_policy" {
 
-    compartment_id = var.node_compartment_ocid
+    compartment_id = var.tenancy_ocid_osok
     description = var.policy_description
     name = var.policy_name
 

@@ -5,7 +5,7 @@ variable "tenancy_ocid" {
   default = "ocid1.tenancy.oc1..aaaaaaaajznex5attydtrmrgudwayqu7kn4krasw2ct4h4pwz7nwbfxoyd4q"
   }
 variable "compartment_ocid" {
-  default =  "ocid1.compartment.oc1..aaaaaaaatsicihq6k7nqthosj3ed3vw6mimftezmxxlf2cngre726enzxsla"
+  default =  "ocid1.compartment.oc1..aaaaaaaamtrs5i5sm6b4ie2uchhjlu6jxp3oehi5y4b6hp34pqpcffpkdzja"
 }
 variable "user_ocid" {
   default = "ocid1.user.oc1..aaaaaaaao7mct2dugqn6ymsm2mncrthv2q2zcbh7emcgwmckswmaiboiargq"
@@ -65,49 +65,10 @@ variable "policy_name" {
 
 
 
-# variables for Kube.tf
-
-
-variable "kube_config_path" {
-    type = string
-    default = "/tmp/kubeconfig"
+variable "tenancy_ocid_osok" {
+  default =  ""
+  type = string
 }
-
-# context within .kubeconfig to use
-variable "config_context" {
-    type = string
-    default = ""
-
-}
-
-
-
-
-
-
-
-/*
-variable "registry_display_name" {
-  default = "node-express-getting-starter"
-}
-*/
-
-
-
-/*
-variable "deploy_artifact_display_name" {
-  default = "node-express-getting-starter"
-}
-*/
-
-
-#variable "ocir_region" {
-# default = "iad"}
-
-
-
-
-
 
 
 
