@@ -4,7 +4,7 @@
 
 # install OLM and OSOK operator with install and cleanup scripts
 terraform {
-  required_version = "> 0.8.0"
+  #required_version = "> 0.8.0"
 }
 
 resource "null_resource" "install_osok" {
