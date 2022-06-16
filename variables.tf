@@ -65,12 +65,14 @@ variable "policy_name" {
 
 variable "tenancy_ocid_osok" {
   type = string
+  default = ""
 }
 
 
 
 variable "node_compartment_ocid" {
   type = string
+  default = ""
 }
 
 

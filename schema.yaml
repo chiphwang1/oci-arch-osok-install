@@ -21,25 +21,17 @@ variableGroups:
   - private_key_path
   - network_cidrs
 
-
-
-
-    
-
-
-
-- title: OKE Cluster Configuration
+- title: Policy Variables
   visible: true 
   variables:
-    - create_new_oke_cluster
-    - existent_oke_cluster_id
-    - create_new_compartment_for_oke
-    - oke_compartment_description
-    - cluster_options_add_ons_is_kubernetes_dashboard_enabled
-    - cluster_options_admission_controller_options_is_pod_security_policy_enabled
-    - cluster_workers_visibility
-    - cluster_endpoint_visibility
-    - k8s_version
+    - dynamic_group_name
+    - dynamic_group_description
+    - policy_name
+    - tenancy_ocid_osok
+    - node_compartment_ocid
+
+
+
 
 - title: OKE Worker Nodes Configuration
   visible: true 
